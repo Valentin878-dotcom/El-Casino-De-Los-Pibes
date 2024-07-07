@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Casino De Los Pibes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="El Casino De Los Pibes Logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+        <div class="right-menu">
+            <ul>
+                <li><a href="#login">Iniciar Sesion</a></li>
+                <li><a href="#registro">Registrarse</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido al El Casino De Los Pibes </h1>
+            <p>Disfruta de los mejores juegos de casino desde la comodidad de tu hogar.</p>
+        </section>
+        <section id="juegos">
+            <h2>Nuestros Juegos</h2>
+            <div class="juegos-container">
+                <div class="juego">
+                    <img src="images/blackjack.jpg" alt="Blackjack">
+                    <h3>Blackjack</h3>
+                    <button onclick="playGame('blackjack')">Jugar</button>
+                </div>
+                <div class="juego">
+                    <img src="images/ruleta.jpg" alt="Ruleta">
+                    <h3>Ruleta</h3>
+                    <button onclick="playGame('ruleta')">Jugar</button>
+                </div>
+                <div class="juego">
+                    <img src="images/tragamonedas.jpg" alt="Tragamonedas">
+                    <h3>Tragamonedas</h3>
+                    <button onclick="playGame('tragamonedas')">Jugar</button>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="registro">
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Contrasena:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>Iniciar Sesion</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Usuario:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                
+                <label for="loginPassword">Contrasena:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                
+                <button type="submit">Iniciar Sesion</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 El Casino De Los Pibes . Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

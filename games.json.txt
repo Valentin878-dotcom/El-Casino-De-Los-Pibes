@@ -1,0 +1,5 @@
+[
+    { "name": "Blackjack", "description": "Juego de cartas donde ganas si consigues 21 puntos." },
+    { "name": "Ruleta", "description": "Adivina dónde caerá la bola para ganar." },
+    { "name": "Tragamonedas", "description": "Gira los rodillos y gana si alineas los símbolos." }
+]
